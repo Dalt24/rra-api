@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using api_rra1.ClassModels;
+using api_rra1.ClassModels.Database;
 
 namespace api_rra1.Controllers
 {
@@ -13,9 +15,9 @@ namespace api_rra1.Controllers
     {
         // GET: api/User
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<User> Get()
         {
-            return new string[] { "value1", "value2" };
+            return ReadUser.ReadAllUsers();
         }
 
         // GET: api/User/5
@@ -27,8 +29,9 @@ namespace api_rra1.Controllers
 
         // POST: api/User
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] User value)
         {
+            SaveUser.CreateUser(value);
         }
 
         // PUT: api/User/5

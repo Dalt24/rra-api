@@ -1,6 +1,6 @@
 using System;
-// using api.ClassModels;
-// using api.Database;
+using api_rra1.ClassModels;
+using api_rra1.ClassModels.Database;
 
 
 
@@ -26,13 +26,21 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// if we update the class models, drop the table & make a new one so data isn't stale
+// DeleteSong.DropUserTable();
+// SaveUser.CreateUserTable();
+
+
+
+
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
