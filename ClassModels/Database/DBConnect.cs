@@ -23,7 +23,7 @@ namespace api_rra1.ClassModels.Database
             database = "ariaudu1us0n6inp";
             port = "3306";
             userName = "ukh0yuwum37t36dn";
-            password = "	lzrb32s53powqdhx";
+            password = "lzrb32s53powqdhx";
 
             string cs = $@"server = {server};user={userName};database={database};port={port};password={password};";
             connection = new MySqlConnection(cs);

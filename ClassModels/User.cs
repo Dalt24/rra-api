@@ -1,5 +1,10 @@
 namespace api_rra1.ClassModels.Database
 {
+    //   firstName: firstName,
+    //       lastName: lastName,
+    //       emailAddress: userEmail,
+    //       phoneNumber: phoneNumber,
+    //       userPassword: passWordOne,
     public class User
     {
         public string? userID { get; set; }
@@ -15,9 +20,6 @@ namespace api_rra1.ClassModels.Database
         {
             userID = Guid.NewGuid().ToString();
         }
-        public override string ToString()
-        {
-            return $"{firstName} {lastName}";
-        }
+
     }
 }

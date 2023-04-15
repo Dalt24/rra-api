@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dcwda\\Desktop\\321 RRA Front-End (1)\\api-rra1\\api-rra1.csproj": {}
+    "C:\\Users\\dcwda\\Desktop\\321 RRA\\api-rra1\\api-rra1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dcwda\\Desktop\\321 RRA Front-End (1)\\api-rra1\\api-rra1.csproj": {
+    "C:\\Users\\dcwda\\Desktop\\321 RRA\\api-rra1\\api-rra1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dcwda\\Desktop\\321 RRA Front-End (1)\\api-rra1\\api-rra1.csproj",
+        "projectUniqueName": "C:\\Users\\dcwda\\Desktop\\321 RRA\\api-rra1\\api-rra1.csproj",
         "projectName": "api-rra1",
-        "projectPath": "C:\\Users\\dcwda\\Desktop\\321 RRA Front-End (1)\\api-rra1\\api-rra1.csproj",
+        "projectPath": "C:\\Users\\dcwda\\Desktop\\321 RRA\\api-rra1\\api-rra1.csproj",
         "packagesPath": "C:\\Users\\dcwda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dcwda\\Desktop\\321 RRA Front-End (1)\\api-rra1\\obj\\",
+        "outputPath": "C:\\Users\\dcwda\\Desktop\\321 RRA\\api-rra1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dcwda\\AppData\\Roaming\\NuGet\\NuGet.Config"

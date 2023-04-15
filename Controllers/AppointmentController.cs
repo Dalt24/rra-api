@@ -2,45 +2,46 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using api_rra1.ClassModels;
 using api_rra1.ClassModels.Database;
+using api_rra1.ClassModels.Database.AppointmentFunctions;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace api_rra1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class AppointmentController : ControllerBase
     {
-        // GET: api/User
+        // GET: api/Appointment
         [HttpGet]
-        public List<User> Get()
+        public List<Appointment> Get()
         {
-            return ReadUser.ReadAllUsers();
+            return ReadAppointment.ReadAllAppointments();
         }
 
-        // GET: api/User/5
+        // GET: api/Appointment/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST: api/User
+        // POST: api/Appointment
         [HttpPost]
-        public void Post([FromBody] User value)
+        public void Post([FromBody] Appointment value)
         {
-            SaveUser.CreateUser(value);
+            SaveAppointment.CreateAppointment(value);
         }
 
-        // PUT: api/User/5
+        // PUT: api/Appointment/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE: api/User/5
+        // DELETE: api/Appointment/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

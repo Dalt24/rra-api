@@ -8,14 +8,6 @@ namespace api_rra1.ClassModels.Database
     {
         public static List<User> ReadAllUsers()
         {
-            // cmd.Parameters.AddWithValue("@userID", myUser.userID);
-            // cmd.Parameters.AddWithValue("@firstName", myUser.firstName);
-            // cmd.Parameters.AddWithValue("@lastName", myUser.lastName);
-            // cmd.Parameters.AddWithValue("@emailAddress", myUser.emailAddress);
-            // cmd.Parameters.AddWithValue("@phoneNumber", myUser.phoneNumber);
-            // cmd.Parameters.AddWithValue("@userPassword", myUser.userPassword);
-            // cmd.Parameters.AddWithValue("@isAdmin", myUser.isAdmin);
-            // cmd.Parameters.AddWithValue("@isTherapist", myUser.isTherapist);
             List<User> allUsers = new List<User>();
             DBConnect db = new DBConnect();
             bool isOpen = db.OpenCon();

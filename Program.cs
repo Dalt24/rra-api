@@ -1,8 +1,8 @@
 using System;
 using api_rra1.ClassModels;
 using api_rra1.ClassModels.Database;
-
-
+using api_rra1.ClassModels.Database.AppointmentFunctions;
+using api_rra1.ClassModels.Database.TherapistFunctions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,8 +27,13 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // if we update the class models, drop the table & make a new one so data isn't stale
-// DeleteSong.DropUserTable();
+// DeleteUser.DropUserTable();
 // SaveUser.CreateUserTable();
+
+// SaveTherapist.CreateTherapistTable();
+
+
+// SaveAppointment.CreateAppointmentTable();
 
 
 

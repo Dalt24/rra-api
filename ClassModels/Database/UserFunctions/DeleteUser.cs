@@ -3,7 +3,7 @@ using MySql.Data.MySqlClient;
 
 namespace api_rra1.ClassModels.Database
 {
-    public class DeleteSong
+    public class DeleteUser
     {
 
         public static void DropUserTable()
