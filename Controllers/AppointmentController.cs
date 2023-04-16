@@ -37,8 +37,9 @@ namespace api_rra1.Controllers
 
         // PUT: api/Appointment/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(string id, [FromBody] Appointment value)
         {
+            UpdateAppointment.ChangeAppointment(id, value);
         }
 
         // DELETE: api/Appointment/5

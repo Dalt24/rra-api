@@ -13,8 +13,8 @@ namespace api_rra1.ClassModels
         public string? appointmentID { get; set; }
         public string? appointmentStartDate { get; set; }
         public string? appointmentEndDate { get; set; }
-        public string? isCanceled { get; set; } = "false";
         public string? therapyType { get; set; }
+        public string? isCanceled { get; set; } = "false";
 
         public Appointment()
         {

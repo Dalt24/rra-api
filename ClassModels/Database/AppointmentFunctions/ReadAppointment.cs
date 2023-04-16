@@ -17,7 +17,7 @@ namespace api_rra1.ClassModels.Database.AppointmentFunctions
                 MySqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    allAppointments.Add(new Appointment() { userID = reader.GetString(0), firstName = reader.GetString(1), lastName = reader.GetString(2), emailAddress = reader.GetString(3), locationAddress = reader.GetString(4), therapistFirstName = reader.GetString(5), therapistLastName = reader.GetString(6), therapistID = reader.GetString(7), appointmentID = reader.GetString(8), appointmentStartDate = reader.GetString(9), appointmentEndDate = reader.GetString(10) });
+                    allAppointments.Add(new Appointment() { userID = reader.GetString(0), firstName = reader.GetString(1), lastName = reader.GetString(2), emailAddress = reader.GetString(3), locationAddress = reader.GetString(4), therapistFirstName = reader.GetString(5), therapistLastName = reader.GetString(6), therapistID = reader.GetString(7), appointmentID = reader.GetString(8), appointmentStartDate = reader.GetString(9), appointmentEndDate = reader.GetString(10), therapyType = reader.GetString(11), isCanceled = reader.GetString(12) });
                 }
                 db.CloseCon();
                 return allAppointments;

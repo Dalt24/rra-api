@@ -27,6 +27,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // if we update the class models, drop the table & make a new one so data isn't stale
+
 // DeleteUser.DropUserTable();
 // SaveUser.CreateUserTable();
 
