@@ -29,7 +29,8 @@ namespace api_rra1.ClassModels.Database.TherapistFunctions
                 MySqlConnection? con = db.GetCon();
                 string stm = @"INSERT INTO therapists(therapistID, firstName, lastName, availability, emailAddress, therapistPassword, isAdmin, isTherapist) VALUES(@therapistID, @firstName, @lastName, @availability, @emailAddress, @therapistPassword, @isAdmin, @isTherapist)";
                 using var cmd = new MySqlCommand(stm, con);
-
+                Console.WriteLine(myTherapist.availability);
+                Console.WriteLine(myTherapist.firstName);
                 cmd.Parameters.AddWithValue("@therapistID", myTherapist.therapistID);
                 cmd.Parameters.AddWithValue("@firstName", myTherapist.firstName);
                 cmd.Parameters.AddWithValue("@lastName", myTherapist.lastName);

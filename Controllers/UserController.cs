@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using api_rra1.ClassModels;
 using api_rra1.ClassModels.Database;
+using api_rra1.ClassModels.Database.UserFunctions;
 
 namespace api_rra1.Controllers
 {
@@ -36,8 +37,9 @@ namespace api_rra1.Controllers
 
         // PUT: api/User/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(string id, [FromBody] User value)
         {
+            UpdateUser.ChangeUser(id, value);
         }
 
         // DELETE: api/User/5
