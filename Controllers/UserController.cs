@@ -44,8 +44,9 @@ namespace api_rra1.Controllers
 
         // DELETE: api/User/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(string id)
         {
+            DeleteUser.DeleteUserr(id);
         }
     }
 }
