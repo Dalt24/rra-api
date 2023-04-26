@@ -12,7 +12,7 @@ namespace api_rra1.ClassModels.Database.TherapistFunctions
             if (isOpen)
             {
                 MySqlConnection? con = db.GetCon();
-                string stm = "SELECT * from Therapists";
+                string stm = "SELECT * from therapists";
                 using var cmd = new MySqlCommand(stm, con);
                 MySqlDataReader reader = cmd.ExecuteReader();
                 // therapistID, firstName, lastName, availability, emailAddress, therapistPassword, isAdmin

@@ -19,11 +19,16 @@ namespace api_rra1.ClassModels.Database
 
         private void DBinit()
         {
-            server = "ckshdphy86qnz0bj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-            database = "ariaudu1us0n6inp";
+            server = "lin-20422-11701-mysql-primary.servers.linodedb.net";
+            database = "sys";
             port = "3306";
-            userName = "ukh0yuwum37t36dn";
-            password = "lzrb32s53powqdhx";
+            userName = "linroot";
+            password = "z,ces3ZVj17ZhLNm";
+            // server = "ckshdphy86qnz0bj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+            // database = "ariaudu1us0n6inp";
+            // port = "3306";
+            // userName = "ukh0yuwum37t36dn";
+            // password = "lzrb32s53powqdhx";
 
             string cs = $@"server = {server};user={userName};database={database};port={port};password={password};";
             connection = new MySqlConnection(cs);
@@ -72,5 +77,3 @@ namespace api_rra1.ClassModels.Database
 
     }
 }
-
-
