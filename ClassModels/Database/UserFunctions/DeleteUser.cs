@@ -34,7 +34,7 @@ namespace api_rra1.ClassModels.Database
             if (isOpen)
             {
                 // string stm = @"INSERT INTO Users(UserID, firstName, lastName, availability, emailAddress, UserPassword, isAdmin, isUser) VALUES(@UserID, @firstName, @lastName, @availability, @emailAddress, @UserPassword, @isAdmin, @isUser)";
-                string stm = @"DELETE from Users WHERE userID =@id";
+                string stm = @"DELETE from users WHERE userID =@id";
                 MySqlConnection? con = db.GetCon();
                 using var cmd = new MySqlCommand(stm, con);
                 cmd.Parameters.AddWithValue("id", id);

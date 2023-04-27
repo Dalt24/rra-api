@@ -11,7 +11,7 @@ namespace api_rra1.ClassModels.Database.UserFunctions
             if (isOpen)
             {
                 // string stm = @"INSERT INTO Users(UserID, firstName, lastName, availability, emailAddress, UserPassword, isAdmin, isUser) VALUES(@UserID, @firstName, @lastName, @availability, @emailAddress, @UserPassword, @isAdmin, @isUser)";
-                string stm = @"UPDATE Users SET userPassword=@userPassword WHERE userID =@id";
+                string stm = @"UPDATE users SET userPassword=@userPassword WHERE userID =@id";
                 MySqlConnection? con = db.GetCon();
                 using var cmd = new MySqlCommand(stm, con);
                 cmd.Parameters.AddWithValue("@userPassword", myUser.userPassword);

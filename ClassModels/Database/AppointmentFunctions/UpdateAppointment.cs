@@ -12,7 +12,7 @@ namespace api_rra1.ClassModels.Database.AppointmentFunctions
             {
                 // string stm = @"INSERT INTO Appointments(AppointmentID, firstName, lastName, availability, emailAddress, AppointmentPassword, isAdmin, isAppointment) VALUES(@AppointmentID, @firstName, @lastName, @availability, @emailAddress, @AppointmentPassword, @isAdmin, @isAppointment)";
                 Console.WriteLine(id);
-                string stm = @"UPDATE Appointments SET isCanceled=@isCanceled WHERE appointmentID =@id";
+                string stm = @"UPDATE appointments SET isCanceled=@isCanceled WHERE appointmentID =@id";
                 MySqlConnection? con = db.GetCon();
                 using var cmd = new MySqlCommand(stm, con);
                 cmd.Parameters.AddWithValue("@isCanceled", myAppointment.isCanceled);
